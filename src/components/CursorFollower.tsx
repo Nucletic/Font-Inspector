@@ -2,9 +2,22 @@ import { useEffect, useRef, useState } from "react";
 import FontPreview from "./FontPreview";
 import { detectActualFont } from "../content/core";
 
+type Popup = {
+  id: number;
+  x: number;
+  y: number;
+  fontFamily: string;
+  fontStack: string;
+  fontWeight: string;
+  fontStyle: string;
+  fontSize: string;
+  lineHeight: string;
+  color: string;
+};
 function CursorFollower() {
   const [MousePos, setMousePos] = useState({ mouseX: 0, mouseY: 0 });
-  const [popups, setPopups] = useState([]);
+
+  const [popups, setPopups] = useState<Popup[]>([]);
   const [hoveredFontStyles, setHoveredFontStyles] = useState({
     fontFamily: "",
     fontStack: "",
