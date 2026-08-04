@@ -1,0 +1,227 @@
+@import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+:host {
+  position: fixed;
+  inset: 0;
+  z-index: 2147483647;
+  pointer-events: none;
+}
+
+#ShadowHostBody {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+}
+
+.Overlay {
+  width: 100%;
+  height: 100%;
+}
+
+.exit-button {
+  pointer-events: auto;
+  outline: none;
+  cursor: pointer;
+
+  margin: 8px;
+  padding: 12px 14px;
+
+  border: 1px solid #4f4f4f;
+  border-radius: 10px;
+
+  background: linear-gradient(to bottom, #343434, #2b2b2b);
+
+  color: #fff;
+  font-size: 13px;
+  font-weight: 700;
+
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.12),
+    inset 0 -1px 0 rgba(0, 0, 0, 0.4),
+    0 2px 0 rgba(0, 0, 0, 0.45),
+    0 0 0 1px rgba(255, 255, 255, 0.04);
+
+  transition:
+    background 0.15s,
+    transform 0.1s,
+    box-shadow 0.15s;
+
+  position: fixed;
+  top: 10px;
+  right: 10px;
+}
+
+.exit-button:hover {
+  background: linear-gradient(to bottom, #3a3a3a, #2a2a2a);
+}
+
+.exit-button:active {
+  transform: translateY(2px);
+
+  box-shadow:
+    inset 0 2px 5px rgba(0, 0, 0, 0.45),
+    0 1px 0 rgba(0, 0, 0, 0.4);
+}
+
+.exit-button kbd {
+  font-family: "JetBrains Mono", monospace;
+
+  background: #efefef;
+  color: #444;
+
+  border: 1px solid #cfcfcf;
+  border-bottom: 2px solid #b8b8b8;
+
+  border-radius: 5px;
+
+  padding: 2px 6px;
+
+  font-size: 12px;
+  font-weight: 700;
+
+  margin-left: 5px;
+}
+
+.cursor-follower {
+  margin: 8px;
+  padding: 12px 14px;
+
+  border: 1px solid #4f4f4f;
+  border-radius: 10px;
+
+  background: linear-gradient(to bottom, #343434, #2b2b2b);
+
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.12),
+    inset 0 -1px 0 rgba(0, 0, 0, 0.4),
+    0 2px 0 rgba(0, 0, 0, 0.45),
+    0 0 0 1px rgba(255, 255, 255, 0.04);
+
+  transition:
+    background 0.15s,
+    transform 0.1s,
+    box-shadow 0.15s;
+}
+
+.cursor-follower p {
+  color: #fff;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.font-preview {
+  width: 470px;
+  margin: 8px;
+  padding: 12px 14px;
+  pointer-events: auto;
+  border: 1px solid #4f4f4f;
+  border-radius: 10px;
+
+  background: linear-gradient(to bottom, #343434, #2b2b2b);
+
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.12),
+    inset 0 -1px 0 rgba(0, 0, 0, 0.4),
+    0 2px 0 rgba(0, 0, 0, 0.45),
+    0 0 0 1px rgba(255, 255, 255, 0.04);
+
+  transition:
+    background 0.15s,
+    transform 0.1s,
+    box-shadow 0.15s;
+}
+
+.font-preview-title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.font-title {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.font-preview-close-button {
+  pointer-events: auto;
+  cursor: pointer;
+  outline: none;
+
+  width: 34px;
+  height: 34px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border: 1px solid #505050;
+  border-radius: 8px;
+
+  background: linear-gradient(to bottom, #3a3a3a, #2d2d2d);
+
+  color: #e6e6e6;
+
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.12),
+    inset 0 -1px 0 rgba(0, 0, 0, 0.45),
+    0 2px 0 rgba(0, 0, 0, 0.45);
+
+  transition:
+    background 0.15s ease,
+    transform 0.1s ease,
+    box-shadow 0.15s ease,
+    border-color 0.15s ease,
+    color 0.15s ease;
+}
+
+.font-preview-close-button:hover {
+  background: linear-gradient(to bottom, #434343, #323232);
+  border-color: #666;
+  color: #fff;
+}
+
+.font-preview-close-button:active {
+  transform: translateY(2px);
+
+  box-shadow:
+    inset 0 2px 5px rgba(0, 0, 0, 0.5),
+    0 1px 0 rgba(0, 0, 0, 0.35);
+}
+
+.font-preview-close-button svg {
+  width: 14px;
+  height: 14px;
+}
+
+.font-preview-details {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 14px 22px;
+  margin-top: 14px;
+}
+
+.font-preview-item {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.preview-property {
+  font-size: 13px;
+  font-weight: 400;
+}
+
+.preview-value {
+  font-size: 15px;
+  margin-top: 4px;
+  font-weight: 600;
+  word-break: break-word;
+}
