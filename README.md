@@ -1,75 +1,91 @@
-# React + TypeScript + Vite
+# Font Inspector
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A lightweight Chrome extension that lets you inspect fonts on any webpage. Simply click the extension icon and hover over text to view detailed typography information.
 
-Currently, two official plugins are available:
+> **Status:** 🚧 Under development. Not yet available on the Chrome Web Store.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Features
 
-## React Compiler
+- 🔍 Inspect fonts on any webpage
+- 📝 View font family
+- 📏 View font size
+- ⚖️ View font weight
+- 📐 View line height
+- 🎨 View text color
+- ✨ Clean and modern overlay
+- ⚡ Lightweight and fast
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Preview
 
-## Expanding the ESLint configuration
+> Add screenshots or GIFs here.
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## Installation (Development)
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+### Prerequisites
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+- Node.js 18+
+- npm
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+### Clone the repository
 
+```bash
+git clone https://github.com/Nucletic/Font-Inspector.git
+cd Font-Inspector
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+### Install dependencies
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-
+```bash
+npm install
 ```
+
+### Start development
+
+```bash
+npm run dev
+```
+
+### Build the extension
+
+```bash
+npm run build
+```
+
+### Load into Chrome
+
+1. Open `chrome://extensions`
+2. Enable **Developer mode**
+3. Click **Load unpacked**
+4. Select the generated `dist` folder
+
+## Usage
+
+1. Open any website.
+2. Click the **Font Inspector** extension icon.
+3. Hover over any text.
+4. View the font details in the overlay.
+
+## Tech Stack
+
+- React
+- TypeScript
+- Vite
+- CRXJS
+- Chrome Extensions Manifest V3
+
+## Roadmap
+
+- [ ] Chrome Web Store release
+- [ ] Copy font information
+- [ ] Export typography details
+- [ ] Google Fonts detection
+- [ ] Keyboard shortcuts
+- [ ] Improved accessibility
+
+## Contributing
+
+Contributions, issues, and feature requests are welcome.
+
+## License
+
+MIT
