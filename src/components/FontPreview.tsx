@@ -70,6 +70,7 @@ function FontPreview({ ...props }: FontPreviewProps) {
           fontWeight: props.fontWeight,
           fontStyle: props.fontStyle,
           fontSize: "26px",
+          color: "#fff",
           overflow: "hidden",
         }}
       >

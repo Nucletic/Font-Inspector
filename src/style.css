@@ -217,6 +217,7 @@
 .preview-property {
   font-size: 13px;
   font-weight: 400;
+  color: #fff;
 }
 
 .preview-value {
@@ -224,4 +225,5 @@
   margin-top: 4px;
   font-weight: 600;
   word-break: break-word;
+  color: #fff;
 }
