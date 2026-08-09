@@ -7,7 +7,6 @@ let host: null | HTMLElement = null;
 let root: null | Root = null;
 
 export function showOverlay() {
-  if (host) return;
   host = document.createElement("div");
   document.body.append(host);
 
@@ -36,7 +35,11 @@ export function hideOverlay() {
 chrome.runtime.onMessage.addListener((message) => {
   try {
     if (message.action === "showOverlay") {
-      showOverlay();
+      if (!host) {
+        showOverlay();
+      } else {
+        hideOverlay();
+      }
     }
   } catch (error) {
     console.log("Failed to recieve message:", error);
