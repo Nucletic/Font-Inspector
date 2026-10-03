@@ -2,7 +2,7 @@
 
 # Font Inspector
 
-### Inspect any font on any webpage — instantly.
+### Inspect any font on any webpage instantly.
 
 A lightweight Chrome extension for developers, designers, and typography enthusiasts. Hover over text to identify the font being used, then click to inspect detailed typography properties without opening DevTools.
 
@@ -37,21 +37,20 @@ No DevTools. No digging through CSS. Just point and inspect.
   </tr>
 </table>
 
-
 ## Features
 
-- **Instant font detection** — hover over text to see the font being used.
-- **Detailed typography inspection** — inspect the computed typography of an element.
-- **Font family** — see the actual font-family stack applied to the element.
-- **Font weight** — identify the current weight, such as 400 or 500.
-- **Font size** — see the computed font size.
-- **Font style** — distinguish normal, italic, and other styles.
-- **Line height** — inspect the element's computed line height.
-- **Text color** — view the computed text color.
-- **Live inspection** — inspect fonts directly on the page you are viewing.
-- **Minimal overlay** — information appears in a compact interface without disrupting the page.
-- **No account required** — install it and start inspecting.
-- **Privacy-focused** — the extension does not collect or use user data.
+- **Instant font detection** - hover over text to see the font being used.
+- **Detailed typography inspection** - inspect the computed typography of an element.
+- **Font family** - see the actual font-family stack applied to the element.
+- **Font weight** - identify the current weight, such as 400 or 500.
+- **Font size** - see the computed font size.
+- **Font style** - distinguish normal, italic, and other styles.
+- **Line height** - inspect the element's computed line height.
+- **Text color** - view the computed text color.
+- **Live inspection** - inspect fonts directly on the page you are viewing.
+- **Minimal overlay** - information appears in a compact interface without disrupting the page.
+- **No account required** - install it and start inspecting.
+- **Privacy-focused** - the extension does not collect or use user data.
 
 ## How it works
 
