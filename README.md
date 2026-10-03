@@ -25,19 +25,19 @@ No DevTools. No digging through CSS. Just point and inspect.
 ## Preview
 
 <p align="center">
-  <img src="public/store-screenshots/font-hover.png" alt="Font Inspector showing the detected font on hover" width="900">
+  <img src="public/store-screenshots/font-hover.png" alt="Font Inspector showing the detected font on hover" width="450">
 </p>
 
 <p align="center">
-  <img src="public/store-screenshots/font-details.png" alt="Font Inspector showing detailed font information" width="900">
+  <img src="public/store-screenshots/font-details.png" alt="Font Inspector showing detailed font information" width="450">
 </p>
 
 <p align="center">
-  <img src="public/store-screenshots/roboto-hover.png" alt="Font Inspector detecting Roboto on YouTube" width="900">
+  <img src="public/store-screenshots/roboto-hover.png" alt="Font Inspector detecting Roboto on YouTube" width="450">
 </p>
 
 <p align="center">
-  <img src="public/store-screenshots/roboto-details.png" alt="Font Inspector showing Roboto font details" width="900">
+  <img src="public/store-screenshots/roboto-details.png" alt="Font Inspector showing Roboto font details" width="450">
 </p>
 
 ## Features
